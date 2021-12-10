@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="159" started-at="2021-12-08T14:49:06Z" finished-at="2021-12-08T14:49:06Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="159" started-at="2021-12-08T14:49:06Z" finished-at="2021-12-08T14:49:06Z">
+      <class name="org.testing.Sample1">
+        <test-method status="PASS" signature="tc11()[pri:0, instance:org.testing.Sample1@4b9e13df]" name="tc11" duration-ms="31" started-at="2021-12-08T14:49:06Z" finished-at="2021-12-08T14:49:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc11 -->
+        <test-method status="PASS" signature="tc22()[pri:0, instance:org.testing.Sample1@4b9e13df]" name="tc22" duration-ms="0" started-at="2021-12-08T14:49:06Z" finished-at="2021-12-08T14:49:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc22 -->
+        <test-method status="PASS" signature="tc33()[pri:0, instance:org.testing.Sample1@4b9e13df]" name="tc33" duration-ms="16" started-at="2021-12-08T14:49:06Z" finished-at="2021-12-08T14:49:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc33 -->
+      </class> <!-- org.testing.Sample1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

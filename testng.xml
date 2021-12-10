@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SuiteNG">
+  <test name="Test1">
+  <parameter name="Input" value="Java"></parameter>
+  <parameter name="Output" value="Java@123"></parameter>
+    <classes>
+      <class name="org.testing.TestNGEx"/>
+    </classes>
+  </test> <!-- Test1 -->
+</suite> <!-- SuiteNG -->
