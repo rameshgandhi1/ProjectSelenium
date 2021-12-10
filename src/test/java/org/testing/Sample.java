@@ -23,6 +23,10 @@ public class Sample extends BaseClass {
 	private void tc3() {
     System.out.println("test3  "+Thread.currentThread().getId());
 	}
-	
+	@Test
+	private void tc4() {
+    System.out.println(Thread.currentThread().getId());
+    
+	}
 
 }
