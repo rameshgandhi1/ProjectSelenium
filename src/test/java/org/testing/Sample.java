@@ -26,6 +26,7 @@ public class Sample extends BaseClass {
 	@Test
 	private void tc4() {
     System.out.println(Thread.currentThread().getId());
+    System.out.println("hi");
     
 	}
 
