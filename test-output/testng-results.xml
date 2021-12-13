@@ -1,29 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="161" started-at="2021-12-12T11:56:14Z" finished-at="2021-12-12T11:56:14Z">
+  <suite name="Suite" duration-ms="26493" started-at="2021-12-13T04:46:00Z" finished-at="2021-12-13T04:46:26Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="161" started-at="2021-12-12T11:56:14Z" finished-at="2021-12-12T11:56:14Z">
-      <class name="org.testing.Sample">
-        <test-method status="PASS" signature="tc1()[pri:0, instance:org.testing.Sample@5e5792a0]" name="tc1" duration-ms="31" started-at="2021-12-12T11:56:14Z" finished-at="2021-12-12T11:56:14Z">
+    <test name="Test2" duration-ms="3502" started-at="2021-12-13T04:46:00Z" finished-at="2021-12-13T04:46:03Z">
+      <class name="org.testing.CrossBrowser">
+        <test-method status="FAIL" signature="tc1(java.lang.String)[pri:0, instance:org.testing.CrossBrowser@1a968a59]" name="tc1" duration-ms="3376" started-at="2021-12-13T04:46:00Z" finished-at="2021-12-13T04:46:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ff]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[com/google/gson/GsonBuilder]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: com/google/gson/GsonBuilder
+at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromGitHub(WebDriverManager.java:882)
+at io.github.bonigarcia.wdm.managers.FirefoxDriverManager.getDriverUrls(FirefoxDriverManager.java:90)
+at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:731)
+at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:593)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:525)
+at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:277)
+at org.testing.CrossBrowser.tc1(CrossBrowser.java:28)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.ClassNotFoundException: com.google.gson.GsonBuilder
+at java.net.URLClassLoader.findClass(Unknown Source)
+at java.lang.ClassLoader.loadClass(Unknown Source)
+at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+at java.lang.ClassLoader.loadClass(Unknown Source)
+... 27 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc1 -->
-        <test-method status="PASS" signature="tc2()[pri:0, instance:org.testing.Sample@5e5792a0]" name="tc2" duration-ms="0" started-at="2021-12-12T11:56:14Z" finished-at="2021-12-12T11:56:14Z">
+      </class> <!-- org.testing.CrossBrowser -->
+    </test> <!-- Test2 -->
+    <test name="Test1" duration-ms="19874" started-at="2021-12-13T04:46:00Z" finished-at="2021-12-13T04:46:20Z">
+      <class name="org.testing.CrossBrowser">
+        <test-method status="PASS" signature="tc1(java.lang.String)[pri:0, instance:org.testing.CrossBrowser@28d25987]" name="tc1" duration-ms="19807" started-at="2021-12-13T04:46:00Z" finished-at="2021-12-13T04:46:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tc2 -->
-        <test-method status="PASS" signature="tc3()[pri:0, instance:org.testing.Sample@5e5792a0]" name="tc3" duration-ms="16" started-at="2021-12-12T11:56:14Z" finished-at="2021-12-12T11:56:14Z">
+        </test-method> <!-- tc1 -->
+      </class> <!-- org.testing.CrossBrowser -->
+    </test> <!-- Test1 -->
+    <test name="Test3" duration-ms="26493" started-at="2021-12-13T04:46:00Z" finished-at="2021-12-13T04:46:26Z">
+      <class name="org.testing.CrossBrowser">
+        <test-method status="PASS" signature="tc1(java.lang.String)[pri:0, instance:org.testing.CrossBrowser@4dfa3a9d]" name="tc1" duration-ms="26430" started-at="2021-12-13T04:46:00Z" finished-at="2021-12-13T04:46:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tc3 -->
-        <test-method status="PASS" signature="tc4()[pri:0, instance:org.testing.Sample@5e5792a0]" name="tc4" duration-ms="0" started-at="2021-12-12T11:56:14Z" finished-at="2021-12-12T11:56:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tc4 -->
-      </class> <!-- org.testing.Sample -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- tc1 -->
+      </class> <!-- org.testing.CrossBrowser -->
+    </test> <!-- Test3 -->
+  </suite> <!-- Suite -->
 </testng-results>
